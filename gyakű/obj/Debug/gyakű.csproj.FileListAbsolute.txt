@@ -1,0 +1,15 @@
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\bin\Debug\gyakű.exe.config
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\bin\Debug\gyakű.exe
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\bin\Debug\gyakű.pdb
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.csproj.AssemblyReference.cache
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\MainWindow.g.cs
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\App.g.cs
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű_MarkupCompile.cache
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű_MarkupCompile.lref
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\MainWindow.baml
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.g.resources
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.Properties.Resources.resources
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.csproj.GenerateResource.cache
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.csproj.CoreCompileInputs.cache
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.exe
+C:\Users\Szántó Benjámin\source\repos\gyakű\gyakű\obj\Debug\gyakű.pdb
