@@ -1,0 +1,15 @@
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\bin\Debug\WpfKvizApp.exe.config
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\bin\Debug\WpfKvizApp.exe
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\bin\Debug\WpfKvizApp.pdb
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.csproj.AssemblyReference.cache
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\App.g.cs
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp_MarkupCompile.cache
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp_MarkupCompile.lref
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\Views\MainWindow.baml
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.g.resources
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.Properties.Resources.resources
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.csproj.GenerateResource.cache
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.csproj.CoreCompileInputs.cache
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.exe
+C:\Users\Szántó Benjámin\source\repos\WpfKvizApp\WpfKvizApp\obj\Debug\WpfKvizApp.pdb

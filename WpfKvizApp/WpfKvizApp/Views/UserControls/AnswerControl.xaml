@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="WpfKvizApp.Views.UserControls.AnswerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfKvizApp.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="200">
+    <StackPanel
+        Margin="10"
+        Background="AntiqueWhite"
+        MouseUp="StackPanel_MouseUp">
+        <Image
+            x:Name="imageControl"
+            Height="100"
+            Source="https://www.orszagjaro.net/wp-content/uploads/2017/07/esztergom01-800x445.jpg"/>
+        <StackPanel
+            Orientation="Horizontal"
+            Height="30">
+            <RadioButton 
+                Margin="10 0 0 0"
+                x:Name="radioButtonControl"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+            <TextBlock
+                Name="textBlockControl"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Esztergom"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
