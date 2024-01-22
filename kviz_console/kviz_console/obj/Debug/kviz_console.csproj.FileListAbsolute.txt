@@ -1,7 +1,0 @@
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\bin\Debug\kviz_console.exe.config
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\bin\Debug\kviz_console.exe
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\bin\Debug\kviz_console.pdb
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\obj\Debug\kviz_console.csproj.AssemblyReference.cache
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\obj\Debug\kviz_console.csproj.CoreCompileInputs.cache
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\obj\Debug\kviz_console.exe
-C:\Users\Szántó Benjámin\source\repos\kviz_console\kviz_console\obj\Debug\kviz_console.pdb
