@@ -21,12 +21,46 @@ namespace gyak_vizsga_asztali_kolcsonzo
             // feladat3: listázza ki, melyik felhaasználó(név) mennyi db könyvet kölcsönzött ki, rendezze név szerint csökkenő csökkenőbe
             // feladat4: Mennyi olyan könyv van, ahol a szerző neve "J." - al kezdődik
             // feladat5: van-e olyan könyv amelynek címében szerepel a gyűrű szó? ne legyen kis/nagybetű érzékeny keresés!
+            ismetles(kolcsonzesek, kolcsonzok, konyvek);
             feladat1(konyvek);
             feladat2(kolcsonzesek, konyvek);
             feladat3(kolcsonzesek, kolcsonzok);
             feladat4(konyvek);
             feladat5(konyvek);
             Console.ReadKey();
+        }
+
+        private static void ismetles(List<Kolcsonzes> kolcsonzesek, List<Kolcsonzo> kolcsonzok, List<Konyv> konyvek)
+        {
+            // feladat1: Mi a legdrágább könyv? (szerző, cím, ár)
+            Konyv konyv1 = konyvek.OrderBy(x => x.ar).Last();
+            Konyv konyv2 = konyvek.OrderByDescending(x => x.ar).First();
+            Console.WriteLine($"{konyv1.szerzo} {konyv1.cim} ({konyv1.ar})");
+
+            // feladat2: Melyik könyv (név) volt a legnépszerűbb?
+            var legnepszerubb = kolcsonzesek.GroupBy(x => x.konyv_id).Select(x => new
+            {
+                konyv = konyvek.Where(y => y.konyv_id == x.Key).First().cim,
+                osszPelanySzam = x.Sum(y => y.peldanyszam)
+            }).OrderBy(x => x.osszPelanySzam).Last();
+            Console.WriteLine($"{legnepszerubb.konyv} {legnepszerubb.osszPelanySzam}");
+
+            // feladat3: listázza ki, melyik felhaasználó(név) mennyi db könyvet kölcsönzött ki,
+            // rendezze név szerint csökkenő csökkenőbe
+            kolcsonzesek.GroupBy(x => x.kolcsonzo_id).Select(x => new
+            {
+                felhasznalo=kolcsonzok.Where(y=>y.kolcsonzo_id== x.Key).First().nev,
+                kolcsonzesekDbszama=x.Sum(y=>y.peldanyszam)
+            }).OrderByDescending(x => x.felhasznalo).ToList()
+            .ForEach(x => Console.WriteLine($"{x.felhasznalo} {x.kolcsonzesekDbszama}"));
+
+            // feladat4: Mennyi olyan könyv van, ahol a szerző neve "J." - al kezdődik
+            konyvek.Where(x => x.szerzo.StartsWith("J.")).ToList()
+                .ForEach(x => Console.WriteLine($"{x.szerzo}: {x.cim} ({x.ar})"));
+
+            // feladat5: van-e olyan könyv amelynek címében szerepel a gyűrű szó?
+            // ne legyen kis/nagybetű érzékeny keresés!
+            Console.WriteLine(konyvek.Any(x => x.cim.ToLower().Contains("gyűrű"))?"van":"nincs");
         }
 
         private static void feladat5(List<Konyv> konyvek)

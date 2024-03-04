@@ -10,3 +10,13 @@ C:\Users\Szántó Benjámin\source\repos\gyak_vizsga_asztali_kolcsonzo\gyak_vizs
 C:\Users\Szántó Benjámin\source\repos\gyak_vizsga_asztali_kolcsonzo\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.csproj.CopyComplete
 C:\Users\Szántó Benjámin\source\repos\gyak_vizsga_asztali_kolcsonzo\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.exe
 C:\Users\Szántó Benjámin\source\repos\gyak_vizsga_asztali_kolcsonzo\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.pdb
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\bin\Debug\gyak_vizsga_asztali_kolcsonzo.exe.config
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\bin\Debug\gyak_vizsga_asztali_kolcsonzo.exe
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\bin\Debug\gyak_vizsga_asztali_kolcsonzo.pdb
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\bin\Debug\NetworkHelper.pdb
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.csproj.AssemblyReference.cache
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.csproj.CoreCompileInputs.cache
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.csproj.CopyComplete
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.exe
+C:\Users\Szántó Benjámin\Desktop\!!\14_1csop\14-1csop\gyak_vizsga_asztali_kolcsonzo\obj\Debug\gyak_vizsga_asztali_kolcsonzo.pdb

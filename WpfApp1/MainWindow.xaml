@@ -1,0 +1,124 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Topmost="True">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Kölcsönzés">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <GroupBox Header="Kölcsönzés Adatok" Grid.Column="0">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Content="Kölcsönző"  Grid.Column="0"/>
+                                        <ComboBox Grid.Column="1" x:Name="kolcsonzokCbx"/>
+                                    </Grid>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Content="Könyv"  Grid.Column="0"/>
+                                        <ComboBox Grid.Column="1" x:Name="konyvCbx"/>
+                                    </Grid>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Content="Darab"  Grid.Column="0"/>
+                                        <TextBox Grid.Column="1" Text="0" Name="darabTbx"/>
+                                    </Grid>
+                                </StackPanel>
+                                <Button x:Name="listabaBtn" Grid.Row="1" Height="40" Content="Listába tárolás" Click="listabaBtn_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <ListBox x:Name="kolcsonzesLbx" Grid.Column="1"/>
+                    </Grid>
+                    <Button Grid.Row="1" Height="40" Content="Rögzítés az adatbázisba" x:Name="adatbazisbaBtn" Click="adatbazisbaBtn_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Módosítás">
+                <Grid Margin="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox Grid.Column="0" Name="konyvLbx" SelectionChanged="konyvLbx_SelectionChanged"/>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <GroupBox Grid.Row="0" Header="Könyv Adatok">
+                            <StackPanel>
+                                <Grid Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="szerző" Grid.Column="0"/>
+                                    <TextBox Grid.Column="1" Name="szerzoTxb"/>
+                                </Grid>
+                                <Grid Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="cím" Grid.Column="0"/>
+                                    <TextBox Grid.Column="1" Name="cimTxb"/>
+                                </Grid>
+                                <Grid Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="kiadás éve" Grid.Column="0"/>
+                                    <TextBox Grid.Column="1" Name="kiadasEveTxb"/>
+                                </Grid>
+                                <Grid Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Ár" Grid.Column="0"/>
+                                    <TextBox Grid.Column="1" Name="arTxb"/>
+                                </Grid>
+                                <Grid Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="ISBN" Grid.Column="0"/>
+                                    <TextBox Grid.Column="1" Name="isbnTxb"/>
+                                </Grid>
+                            </StackPanel>
+                        </GroupBox>
+                        <Button Height="40" Grid.Row="1" Content="Adatok módosítása"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
