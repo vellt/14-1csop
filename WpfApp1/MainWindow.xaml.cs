@@ -97,7 +97,6 @@ namespace WpfApp1
 
         private void adatModositasBtn_Click(object sender, RoutedEventArgs e)
         {
-            
             Konyv konyv = new Konyv()
             {
                 ar = Convert.ToInt32(arTxb.Text),

@@ -51,6 +51,18 @@ app.get('/kolcsonzesek', (req, res)=>{
     });
 });
 
+app.post('/konyvek', (req, res)=>{
+    const {szerzo, cim, kiadas_eve, ar, ISBN}=req.body;
+    connection.query('INSERT INTO konyv (szerzo, cim, kiadas_eve, ar, ISBN) VALUES (?, ?, ?, ?, ?)',[szerzo, cim, kiadas_eve, ar, ISBN], (err, results)=>{
+        if(err){
+            console.log(err);
+            res.send("hiba");
+        }else{
+            console.log("Sikeres felvitel");
+            res.send("Sikeres felvitel");
+        }
+    });
+});
 
 
 app.post('/kolcsonzesek', (req, res)=>{
