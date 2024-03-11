@@ -83,8 +83,44 @@ namespace WpfApp1
 
         private void konyvLbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Konyv kivalasztottKonyv = (sender as ListBox).SelectedItem as Konyv;
-            szerzoTxb.Text = kivalasztottKonyv.szerzo;
+            if (konyvLbx.SelectedItem != null)
+            {
+                Konyv kivalasztottKonyv = (sender as ListBox).SelectedItem as Konyv;
+                szerzoTxb.Text = kivalasztottKonyv.szerzo;
+                cimTxb.Text = kivalasztottKonyv.cim;
+                kiadasEveTxb.Text = kivalasztottKonyv.kiadas_eve.ToString();
+                arTxb.Text = kivalasztottKonyv.ar.ToString();
+                isbnTxb.Text = kivalasztottKonyv.ISBN;
+                isbnTxb.IsEnabled = false;
+            }
+        }
+
+        private void adatModositasBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Konyv konyv = new Konyv()
+            {
+                ar = Convert.ToInt32(arTxb.Text),
+                cim = cimTxb.Text,
+                ISBN = isbnTxb.Text,
+                kiadas_eve = Convert.ToInt32(kiadasEveTxb.Text),
+                konyv_id = (konyvLbx.SelectedItem as Konyv).konyv_id,
+                szerzo = szerzoTxb.Text
+            };
+            string uzenet = Backend.PUT(baseUrl + "/konyvek").Body(konyv).Send().Message;
+            MessageBox.Show(uzenet);
+            if (uzenet != "hiba")
+            {
+                // első nézetben frissítjük az adatokat
+                int selectedIndex = konyvCbx.SelectedIndex;
+                var konyvek= Backend.GET(baseUrl + "/konyvek").Send().ToList<Konyv>();
+                konyvCbx.ItemsSource = konyvek;
+                konyvCbx.SelectedIndex = selectedIndex;
+                // második nézetben pedig a listbox adatait kellene frissíteni
+                selectedIndex = konyvLbx.SelectedIndex;
+                konyvLbx.ItemsSource = konyvek; ;
+                konyvLbx.SelectedIndex = selectedIndex;
+            }
         }
     }
 }

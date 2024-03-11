@@ -115,7 +115,7 @@
                                 </Grid>
                             </StackPanel>
                         </GroupBox>
-                        <Button Height="40" Grid.Row="1" Content="Adatok módosítása"/>
+                        <Button Name="adatModositasBtn" Height="40" Grid.Row="1" Content="Adatok módosítása" Click="adatModositasBtn_Click"/>
                     </Grid>
                 </Grid>
             </TabItem>
