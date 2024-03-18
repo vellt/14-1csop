@@ -1,0 +1,84 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400" Topmost="True">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Értékelés">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0">
+                        <GroupBox Header="Tanuló Kiválasztása">
+                            <ComboBox Name="tanuloCbx"/>
+                        </GroupBox>
+                        <GroupBox Header="Tárgy Kiválasztása">
+                            <ComboBox Name="targyCbx"/>
+                        </GroupBox>
+                        <GroupBox Header="Értékelés">
+                            <TextBox x:Name="ertekelesTxb"/>
+                        </GroupBox>
+                    </StackPanel>
+                    <Button Grid.Row="1" Name="naplobaBtn" Height="40" Content="Jegy rögzítése a naplóba" Click="naplobaBtn_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Napló">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <GroupBox Header="Tanuló kiválasztása" Grid.Row="0">
+                        <ComboBox Name="naploTanuloCbx" SelectionChanged="naploTanuloCbx_SelectionChanged"/>
+                    </GroupBox>
+                    <GroupBox Grid.Row="1" Header="Tanuló adatai">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Nev" />
+                                <Label Content="NaN" Name="nevLb" Grid.Column="1"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Telefonszám" />
+                                <Label Content="NaN" Name="telefonszamLb" Grid.Column="1"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Születési idő" />
+                                <Label Content="NaN" Name="szuletesiIdoLb" Grid.Column="1"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Email" />
+                                <Label Content="NaN" Name="emailLb" Grid.Column="1"/>
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Row="2" Header="Jegyei">
+                        <ListBox x:Name="jegyekLbx"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

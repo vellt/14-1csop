@@ -1,0 +1,12 @@
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\Tanfolyam_console.exe.config
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\Tanfolyam_console.exe
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\Tanfolyam_console.pdb
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\NetworkHelper.dll
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\NetworkHelper.pdb
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\obj\Debug\Tanfolyam_console.csproj.AssemblyReference.cache
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\obj\Debug\Tanfolyam_console.csproj.CoreCompileInputs.cache
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\obj\Debug\Tanfolyam_console.csproj.CopyComplete
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\obj\Debug\Tanfolyam_console.exe
+C:\Users\Szántó Benjámin\source\repos\Tanfolyam_console\Tanfolyam_console\obj\Debug\Tanfolyam_console.pdb
